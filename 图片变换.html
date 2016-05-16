@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	</style>
+</head>
+<body>
+	<img class="im" src="2.jpg" alt="">
+	<div class="a">
+		<input type="button" value=1>
+		<input type="button" value=2>
+		<input type="button" value=3>
+		<input type="button" value=4>
+	</div>
+	<script src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		
+			$(".a input").eq(0).click(function()
+			{	
+				$(".im").attr("src","3.jpg");
+				$(this).eq(0).css("background-color","red");
+				$(this).eq(0).siblings().css("background-color","#fff")
+				
+
+			});
+			$(".a input").eq(1).click(function()
+			{	
+				$(".im").attr("src","4.png");
+			
+				$(this).eq(1).css("background-color","red");
+				$(this).eq(1).siblings().css("background-color","#fff")
+				// alert($(this).index());
+
+			});
+			$(".a input").eq(2).click(function()
+			{	
+				$(".im").attr("src","5.png");
+			
+				$(this).eq(2).css("background-color","red");
+				$(this).eq(2).siblings().css("background-color","#fff")
+				// alert($(this).index());
+
+			});
+			$(".a input").eq(3).click(function()
+			{	
+				$(".im").attr("src","6.jpg");
+			
+				$(this).eq(3).css("background-color","red");
+				$(this).eq(3).siblings().css("background-color","#fff")
+				// alert($(this).index());
+
+			});
+
+		
+		// for(var x = 0 ; x<=3;x++ ){
+		// 	$(".a input").eq(x).click(function()
+		// 	{
+		// 		$(".im").attr("src","3.jpg");
+		// 		var b = $(this).index();				
+		// 	});
+		// 	$(".a input").eq(x).click(function()
+		// 	{
+		// 		$(".im").attr("src","4.png");
+		// 		var b = $(this).index();				
+		// 	});
+		// 	$(".a input").eq(x).click(function()
+		// 	{
+		// 		$(".im").attr("src","5.png");
+		// 		var b = $(this).index();				
+		// 	});
+		// 	$(".a input").eq(x).click(function()
+		// 	{
+		// 		$(".im").attr("src","6.jpg");
+		// 		var b = $(this).index();				
+		// 	});
+		// 	alert(x);
+		// }
+	
+	</script>
+</body>
+</html>

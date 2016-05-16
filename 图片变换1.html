@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img class="img1" src="2.jpg" alt="">
+	<button>1</button>
+	<button>2</button>
+	<button>3</button>
+	<button>4</button>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("button").eq(0).click(function()
+		{
+			$(".img1").attr("src","3.jpg");
+			$(this).css("background-color","red");
+			$(this).sibings("background-color","#fff");
+		});
+		$("button").eq(1).click(function()
+		{
+			$(".img1").attr("src","4.png");
+			$(this).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+		});
+		$("button").eq(2).click(function()
+		{
+			$(".img1").attr("src","5.png");
+			$(this).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+		});
+		$("button").eq(3).click(function()
+		{
+			$(".img1").attr("src","6.jpg");
+			$(this).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+		});
+	</script>
+</body>
+</html>

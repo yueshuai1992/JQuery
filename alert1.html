@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		input{
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<img class="pic" src="2.jpg" alt="">
+	<br>
+	<div class="an">
+		<input type="button" value="1">
+		<input type="button" value="2">
+		<input type="button" value="3">
+		<input type="button" value="4">
+	</div>
+	<script src="jquery-1.11.1.js"></script> <!-- //引入js文件 -->
+	<script>
+	// javascript
+		$(".an input").eq(0).click(function(){
+			$(".pic").attr("src","3.jpg");
+			$(this).eq(0).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			// alert($(this).index());
+			
+			// alert($(this).index());
+		});
+		$(".an input").eq(1).click(function(){
+			$(".pic").attr("src","6.jpg");
+			$(this).eq(1).css("background-color","green");
+			$(this).siblings().css("background-color","#fff");
+			
+			// alert($(this).index());
+		});
+		$(".an input").eq(2).click(function(){
+			$(".pic").attr("src","4.png");
+			$(".an input").eq(2).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			
+			// alert($(this).index());
+		});
+		$(".an input").eq(3).click(function(){
+			$(".pic").attr("src","5.png");
+			$(this).eq(3).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			
+			// alert($(this).index());
+		});
+	</script>
+</body>
+</html>

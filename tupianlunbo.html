@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0px;
+		padding:0px;
+	}
+	.list li{
+		width:20px;
+		height: 20px;
+		border:1px solid;
+		float:left;
+		list-style: none;
+		text-align: center;
+		line-height: 20px;
+		cursor:pointer;
+	}
+	.list1{
+
+	}
+	</style>
+</head>
+<body>
+	<img class="pic" src="3.jpg" alt="NO">
+	<div class="list">
+		<!-- <ul>
+			<li class="list1">1</li>
+			<li class="list2">2</li>
+			<li class="list3">3</li>
+			<li class="list4">4</li>
+		</ul> -->
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+	<script src="jquery-1.11.1.js"></script>
+	 <script type="text/javascript">
+		// $(".list1").click(function(){
+		// 	$(".pic").attr("src","2.jpg");
+		// })
+		// $(".list2").click(function(){
+		// 	$(".pic").attr("src","4.png");
+		// })
+		// $(".list3").click(function(){
+		// 	$(".pic").attr("src","5.png");
+		// })
+		// $(".list4").click(function(){
+		// 	$(".pic").attr("src","6.jpg");
+		// })
+		var x=0
+		var z=x+1
+		$(".list li").eq(z).click(function(){
+			$(".pic").attr("src","2.jpg")
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{
+			width:600px;
+			height:600px;
+			/*border:1px solid red;*/
+		}
+		td{
+			border:1px solid;
+		}
+	</style>
+</head>
+<body>
+	<table class="tab"></table>
+	<tr class="t_td"></tr>
+	<td class="t_th"></td>
+	<!-- <input class="one" type="text">
+	<input class="two" type="text">
+	<input class="three" type="text">
+	<input class="for" type="text">
+
+	<input class="try" type="button" value="计算"> -->
+
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		// $(".try").click(function(){
+		// 	var num_one = Number($(".one").val());
+		// 	var num_two = $(".two").val();
+		// 	var num_three = Number($(".three").val())
+		// 	var a=0;
+		// 	switch(num_two){
+		// 		case"+" : a= num_one+num_three; break;
+		// 		case"-" : a=num_one-num_three; break;
+		// 		case"*" : a=num_one*num_three; break;
+		// 		case"/" : a=num_one/num_three; break;
+		// 	}
+		// 	alert(a);
+			// if(num_two=="+"){
+			// 	var sum = num_one + num_three;
+			// 	$(".for").val(sum);	
+			// }
+			// if(num_two=="-"){
+			// 	var sum = num_one - num_three;
+			// 	$(".for").val(sum);	
+			// }
+			// if(num_two=="*"){
+			// 	var sum = num_one * num_three;
+			// 	$(".for").val(sum);	
+			// }
+			// if(num_two=="/"){
+			// 	var sum = num_one / num_three;
+			// 	$(".for").val(sum);	
+			// }
+		// })
+		// $(".try").click(function(){
+		
+		// });
+		document.write("<table>");
+		
+		for(var x =1 ; x<=9 ; x++){
+			document.write("<tr>");
+			for(var y = 1; y<=9; y++){
+	
+				document.write("<th>");
+				document.write(x+"X"+y+"="+(x*y));
+				document.write("<th>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+
+
+
+		// var sum =0;
+		// for(var x=0 ; x<=100; x++){
+		// 	console.log(x);
+		// 	 sum = sum + x;
+		// }
+		// alert(sum);
+	</script>
+</body>
+</html>

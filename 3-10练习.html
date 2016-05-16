@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0 auto;
+			padding: 0 auto；
+		}
+		li{
+			width:20px;
+			height:40px;
+			float:left;
+			list-style: none;
+			line-height: 40px;
+			border:1px solid red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<img src="2.jpg" alt="">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$("li").eq(0).click(function(){
+			$("img").attr("src","3.jpg");
+			$(this).css("background-color","red");
+		});
+		$("li").eq(1).click(function(){
+			$("img").attr("src","4.png");
+			$(this).css("background-color","red");
+		});
+		$("li").eq(2).click(function(){
+			$("img").attr("src","5.png");
+			$(this).css("background-color","red");
+		});
+		$("li").eq(3).click(function(){
+			$("img").attr("src","6.jpg");
+			$(this).css("background-color","red");
+			alert("no");
+		});
+
+	</script>
+<!-- 	<form>
+			<input type="text" >
+		</form> -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>1
+		<div class="a">11
+			<div class="aa">111</div>
+				<div class="cc">
+					<div class="aa">aaa</div>
+					<div>bbb</div>
+					<div>ccc</div>
+				</div>
+			<div class="bb">222
+					<div class="dd">ddd</div>
+					<div>eee</div>
+					<div>fff</div>
+			</div>
+			<div>333</div>
+		</div>
+		<div class="b">22
+			
+		</div>
+		<div>33</div>
+	</div>
+	<div>2</div>
+	<div>3</div>
+	<button class = "bu">啊啊</button>
+	<script src="jquery-1.11.1.js" ></script>
+	<script>
+	//children 和 find 方法 获得当前元素集合中每个元素后代
+		// $(".a").find("div").css("background-color","red");
+		// $(".a").children("div").css("background-color","green");
+	//parent 获得匹配当前元素集合中每个元素的父元素
+	 	$(".aa").parent().css("background-color","blue");
+	</script>
+</body>
+</html>

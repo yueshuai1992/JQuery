@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<input class="tet1" type="text" ><a href="">+</a>
+	<input class="tet2" type="text"><a href="">=</a>
+	<input class="tet3" type="text">
+	<input class="but" type="button" value="计算">
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(".but").click(function(){
+			var a = Number($(".tet1").val());
+			var b = Number($(".tet2").val());
+			var c = a+b;
+			$(".tet3").val(c);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		width:30px;
+		height:30px;
+		list-style: none;
+		float:left;
+		border:1px solid red;
+		line-height: 30px;
+		text-align: center;
+		cursor: pointer;
+
+	}
+	</style>
+</head>
+<body>
+	<img class="pics" src="2.jpg" alt="" width=300px height=200px>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("li").eq(0).click(function()
+		{
+			$(".pics").attr("src","3.jpg");
+			$("li").eq(0).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			// alert(1);
+			var a = $(this).index();
+			var man = "第"+(a+1)+"张图片"
+			alert(man);
+		});
+		$("li").eq(1).click(function()
+		{
+			$(".pics").attr("src","6.jpg");
+			$("li").eq(1).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			var a = $(this).index();
+			var man = "第"+(a+1)+"张图片"
+			alert(man);
+			// alert(2);
+		});
+		$("li").eq(2).click(function()
+		{
+			$(".pics").attr("src","4.png");
+			$("li").eq(2).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			var a = $(this).index();
+			var man = "第"+(a+1)+"张图片"
+			alert(man);
+			// alert(3);
+		});
+		$("li").eq(3).click(function()
+		{
+			$(".pics").attr("src","5.png");
+			$("li").eq(3).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+			// alert(4);
+			var a = $(this).index();
+			var man = "第"+(a+1)+"张图片"
+			alert(man);
+		});
+
+	</script>
+</body>
+</html>
